@@ -1,44 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <title>index.htm</title>
-    
-    <style type="text/css">
-    <!--
-    body {
-      color:#000000;
-      background-color:#FFFFFF;
-      background-image:url('Background Image');
-      background-repeat:no-repeat;
-    }
-    a  { color:#0000FF; }
-    a:visited { color:#800080; }
-    a:hover { color:#008000; }
-    a:active { color:#FF0000; }
-    -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak Gupta Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            background: #fff;
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills ul li {
+            background: #77aaff;
+            color: #fff;
+            padding: 10px;
+            margin: 5px 0;
+        }
     </style>
-  </head>
-  <body>
-  <form>
-  <label>Create a itinerary from </label>
-  <select id="city">
-      <option>Jaipur</option>
-      <option>Delhi</option>
-      <option>Bengaluru</option>
-  </select>
-  <label>for</label> 
-  <select id="Nights">
-      <option value="0">Day Trip</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-  </select>
-  
-  <label>Night </label>
-  <button type="button" onclick="alert('Take a walk!')">Go</button>
-  </form> 
-  </body>
-</html>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Deepak Gupta</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="profile" class="container profile">
+        <h2>Profile</h2>
+        <img src="profile.jpg" alt="Profile Picture">
+        <p>I am highly skilled and experienced Software Engineer with a robust background in application development and solving complex engineering problems. I have demonstrated solid development and design expertise, with extensive experience in back-end application development. Known for delivering high-quality, scalable, and efficient solutions, and adept at collaborating with cross-functional teams to drive innovation and achieve project goals.</p>
+    </section>
+
+    <section id="experience" class="container">
+        <h2>Experience</h2>
+        <p><strong>Senior Software Engineer</strong> - Microsoft, USA. (2019 - Present)</p>
+        <p>I specializing in an Azure Monitor system concentrates on engineering and architecting a scalable, reliable, and mission-critical infrastructure. My work emphasizes the technical design, development, and optimization of monitoring systems, leveraging Azure's advanced tools to enable real-time analytics and ensure efficient problem resolution for enterprise-grade applications.</p>
+        <p><strong>Senior Software Engineer</strong> - Microsoft, India. (2015 - 2019)</p>
+        <p>I was an integral part of the System Center team, contributing to the Virtual Machine Manager (VMM)—a robust solution for managing virtualized datacenters. My role focused on designing and developing features that strengthened security and streamlined management capabilities, empowering organizations to build secure and scalable private cloud infrastructures.</p>
+        <p><strong>Principal Software Engineer</strong> - McAfee, India. (2009 - 2015)</p>
+        <p><strong>Software Engineer</strong> - Nortel Networks, India. (2008 - 2009)</p>
+        <p><strong>Sr. Associate Engineer</strong> - Globallogic, India. (2006 - 2008)</p>
+        <p><strong>Sr. Software Engineer</strong> - MS Technology, India. (2005 - 2006)</p>
+    </section>
+
+    <section id="education" class="container">
+        <h2>Education</h2>
+        <p><strong>Bachelor of Engineering, Information Technology</strong> - University of Rajasthan (2000 - 2004)</p>
+    </section>
+
+    <section id="skills" class="container skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Backend Application Development using Managed Languages (C#, Java)</li>
+            <li>System Application Development (C++, Windows)</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <p>Email: keep[.]deep[at]google mail service</p>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener
